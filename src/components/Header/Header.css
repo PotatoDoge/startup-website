@@ -1,0 +1,76 @@
+/* Header */
+.header {
+    height: 50vw;
+    background: url('../../assets/home.jpg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0; /* Start at the top of the page */
+    width: 100%;
+    z-index: 1; /* Behind the navbar */
+    margin-top: -60px; /* Adjust based on the navbar height */
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value for more or less transparency */
+    z-index: 1; /* Places the overlay above the background image */
+}
+
+.header-contents {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0 10vw;
+    z-index: 2; /* Ensures the content is above the overlay */
+    color: white; /* Ensure text color is visible */
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+    font-size: 1vw;
+}
+
+.header-contents button {
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+}
+
+@media (max-width: 1050px) {
+    .header-contents {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 750px) {
+    .header-contents {
+        max-width: 65%;
+    }
+
+    .header-contents p {
+        display: none;
+    }
+
+    .header-contents button {
+        padding: 2vw 4vw;
+    }
+}
