@@ -1,14 +1,17 @@
 import React from 'react';
 import './Home.css'
 import Header from "../../components/Header/Header";
+import About from "../../components/About/About";
 
 const Home = () => {
 
-    return(
+    return (
         <div>
-            <Header />
+            <Header/>
+            <div className="header-spacer"></div>
+            <About/>
         </div>
-    )
+    );
 }
 
 export default Home;

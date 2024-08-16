@@ -1,13 +1,12 @@
 /* Header */
 .header {
-    height: 50vw;
+    height: 50vw; /* This defines the height of the header */
     background: url('../../assets/home.jpg') no-repeat center center;
     background-size: cover;
-    position: absolute;
-    top: 0; /* Start at the top of the page */
+    position: absolute; /* Keep the header position absolute */
+    top: 0;
     width: 100%;
-    z-index: 1; /* Behind the navbar */
-    margin-top: -60px; /* Adjust based on the navbar height */
+    z-index: 1; /* Ensure it stays behind the navbar */
 }
 
 .header::before {
@@ -17,8 +16,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value for more or less transparency */
-    z-index: 1; /* Places the overlay above the background image */
+    background-color: rgba(0, 0, 0, 0.5); /* Background overlay */
+    z-index: 1;
 }
 
 .header-contents {
@@ -32,8 +31,8 @@
     height: 100%;
     text-align: center;
     padding: 0 10vw;
-    z-index: 2; /* Ensures the content is above the overlay */
-    color: white; /* Ensure text color is visible */
+    z-index: 2;
+    color: white;
 }
 
 .header-contents h2 {
@@ -73,4 +72,9 @@
     .header-contents button {
         padding: 2vw 4vw;
     }
+}
+
+/* Spacer element */
+.header-spacer {
+    height: 45vw; /* Same as the header height */
 }
