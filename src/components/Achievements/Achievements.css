@@ -1,4 +1,5 @@
-.achievements{
+/* Achievements Section */
+.achievements {
     width: 100%;
     height: 350px;
     background-color: #d6ccc2;
@@ -7,19 +8,92 @@
     align-items: center;
     padding-left: 160px;
     padding-right: 160px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
-.stat{
+.stat {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.stat h3{
+.stat h3 {
     font-size: 80px;
     color: black;
 }
 
-.stat p{
+.stat p {
     font-size: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .achievements {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .stat h3 {
+        font-size: 60px; /* Adjust font size */
+    }
+
+    .stat p {
+        font-size: 18px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 1000px) {
+    .stat h3 {
+        font-size: 50px; /* Adjust font size */
+    }
+
+    .stat p {
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 850px) {
+    .stat h3 {
+        font-size: 40px; /* Adjust font size */
+    }
+
+    .stat p {
+        font-size: 12px; /* Adjust font size */
+    }
+}
+
+
+
+@media (max-width: 750px) {
+    .achievements {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .stat h3 {
+        font-size: 45px; /* Adjust font size */
+    }
+
+    .stat p {
+        font-size: 16px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 680px) {
+    .achievements {
+        padding: 40px 0;
+        flex-direction: column;
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .stat {
+        margin-bottom: 20px; /* Add spacing between stats */
+    }
+
+    .stat h3 {
+        font-size: 45px; /* Reduce font size */
+    }
+
+    .stat p {
+        font-size: 24px; /* Reduce font size */
+    }
 }
