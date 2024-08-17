@@ -1,12 +1,14 @@
 /* Header */
 .header {
     height: 50vw; /* This defines the height of the header */
-    background: url('../../assets/home.jpg') no-repeat center center;
+    background: url('../../assets/home.jpg');
     background-size: cover;
     position: absolute; /* Keep the header position absolute */
     top: 0;
     width: 100%;
     z-index: 1; /* Ensure it stays behind the navbar */
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .header::before {

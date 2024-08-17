@@ -1,0 +1,58 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 160px 90px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text-title {
+    margin-bottom: 40px;
+    text-align: start;
+}
+
+.about-text-title h1 {
+    color: #49557e;
+    font-weight: 1000;
+    font-size: 50px;
+}
+
+.about-text-paragraph {
+    line-height: 1.8;
+    font-size: 18px;
+
+}
+
+.first-text{
+    text-align: start;
+}
+
+.second-text{
+    text-align: end;
+}
+
+.about-images {
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+.about-images img {
+    width: 420px;
+    position: relative;
+    z-index: 1; /* Ensure the image is on top */
+}
+
+hr{
+    margin: 10px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
