@@ -1,0 +1,58 @@
+.reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.reviews h1{
+    color: #49557e;
+    font-weight: 1000;
+    font-size: 50px;
+}
+
+.reviews-content {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    gap: 130px;
+    row-gap: 50px;
+}
+
+.review-content{
+    width: 100%;
+    margin: auto;
+    transition: 0.3s;
+    animation: fadeIn 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.reviewer-image img {
+    width: 80px;
+    height: 80px; /* Ensure height and width are the same */
+    border-radius: 50%; /* Makes the image a perfect circle */
+    object-fit: cover; /* Ensures the image scales correctly within the circle */
+}
+
+.reviewer-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.reviewer-text p{
+    font-size: 20px;
+}

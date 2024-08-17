@@ -5,6 +5,7 @@ import About from "../../components/About/About";
 import Achievements from "../../components/Achievements/Achievements";
 import WhyUs from "../../components/WhyUs/WhyUs";
 import SolutionsBanner from "../../components/SolutionsBanner/SolutionsBanner";
+import Reviews from "../../components/Reviews/Reviews";
 
 const Home = () => {
 
@@ -16,6 +17,7 @@ const Home = () => {
             <Achievements/>
             <WhyUs/>
             <SolutionsBanner/>
+            <Reviews/>
         </div>
     );
 }
