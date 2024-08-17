@@ -11,27 +11,20 @@ const About = () => {
                 </div>
                 <div className="about-text-paragraph">
                     <div className="first-text">
-                        <p>We specialize in software engineering and IT consulting services
-                            tailored
-                            to
-                            meet the unique needs of each client. Our team of experts is dedicated to creating custom
-                            solutions,
-                            including custom software, desktop apps, websites, webapps, mobile apps, and IT infrastructure,
-                            designed to
-                            optimize efficiency and drive success for your business.</p>
+                        <p>We offer <b>tailored software engineering and IT consulting services</b> to meet your
+                            business
+                            needs. Our experts create custom solutions, including software, desktop, web, and mobile
+                            apps, and IT infrastructure, all designed to <b>boost efficiency</b> and <b>drive
+                                success.</b></p>
                     </div>
                     <br/>
                     <hr/>
                     <br/>
                     <div className="second-text">
-                        <p>With a focus on innovation and
-                            cutting-edge
-                            technology, we are committed to delivering high-quality products that exceed expectations.
-                            Whether
-                            you are a small startup or a large corporation, we have the skills and expertise to help you
-                            achieve
-                            your goals. Contact us today to learn more about how we can elevate your company to the next
-                            level.
+                        <p>
+                            We deliver <b>innovative, high-quality</b> products that exceed expectations. Whether you're a
+                            startup or a large corporation, our expertise will help you <b>achieve your goals</b>. Contact us
+                            today to elevate your business to the next level.
                         </p>
                     </div>
                 </div>
