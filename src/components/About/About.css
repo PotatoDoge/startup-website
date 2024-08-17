@@ -47,7 +47,24 @@
 .about-images img {
     width: 420px;
     position: relative;
+    vertical-align: bottom;
     z-index: 1; /* Ensure the image is on top */
+}
+
+.image-rectangle{
+    position: relative;
+    display: inline-block;
+}
+
+.image-rectangle:after {
+        content: '';
+        position: absolute;
+        left: 2rem;
+        top: 2rem;
+        background-color: #49557e;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
 }
 
 hr{

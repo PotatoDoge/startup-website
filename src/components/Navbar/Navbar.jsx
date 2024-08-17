@@ -11,12 +11,10 @@ const Navbar = ({setShowLogin}) => {
             <ul className="navbar-menu">
                 <a href="#home">Home</a>
                 <a href='#explore-menu'>About Us</a>
-                <a href='#footer'>Offer Us</a>
-                <a href='#footer'>Price List</a>
                 <a href='#footer'>Pricing</a>
                 <a href='#footer'>Projects</a>
                 <a href='#footer'>Blog</a>
-                <a href='#footer'>Contact</a>
+                <a href='#footer'>Contact Us</a>
             </ul>
         </div>
     )
