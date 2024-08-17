@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css'
-import twitter_icon from '../../assets/facebook_icon.png'
-import linkedin_icon from '../../assets/facebook_icon.png'
+import twitter_icon from '../../assets/twitter_icon.png'
+import linkedin_icon from '../../assets/linkedin_icon.png'
 import facebook_icon from '../../assets/facebook_icon.png'
 
 const Footer = () => {
