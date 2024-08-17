@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './Navbar.css';
 import {IoIosCloseCircleOutline} from "react-icons/io";
+import logo from '../../assets/logo.png'
 
 const Navbar = ({setShowLogin}) => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = ({setShowLogin}) => {
     return (
         <div className="navbar">
             <div className="navbar-logo">
-                <a href="#change">Logo goes here</a>
+                <img src={logo} alt="logo"/>
             </div>
             <div className={`navbar-menu-container ${menuOpen ? 'open' : ''}`}>
                 <button className="navbar-close" onClick={toggleMenu}>

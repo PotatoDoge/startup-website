@@ -9,7 +9,12 @@
     justify-content: space-between;
     align-items: center;
     background: transparent; /* Transparent background */
-    backdrop-filter: blur(10px); /* Apply blur effect */
+    backdrop-filter: blur(10px);
+}
+
+.navbar-logo img{
+    width: 6vw;
+    border-radius: 5px;
 }
 
 /* Burger Menu Icon */
@@ -68,8 +73,20 @@
     display: none;
 }
 
+@media (max-width: 1100px){
+    .navbar-logo img{
+        width: 8vw;
+        border-radius: 5px;
+    }
+}
+
 /* Media Queries for Burger Menu */
 @media (max-width: 750px) {
+    .navbar-logo img{
+        width: 16vw;
+        border-radius: 5px;
+    }
+
     .navbar-menu {
         display: none;
     }
