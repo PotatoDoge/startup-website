@@ -11,12 +11,12 @@ const About = () => {
                 </div>
                 <div className="about-text-paragraph">
                     <div className="first-text">
-                        <p>Welcome to our company! We specialize in software engineering and IT consulting services
+                        <p>We specialize in software engineering and IT consulting services
                             tailored
                             to
                             meet the unique needs of each client. Our team of experts is dedicated to creating custom
                             solutions,
-                            including software, desktop apps, websites, webapps, mobile apps, and IT infrastructure,
+                            including custom software, desktop apps, websites, webapps, mobile apps, and IT infrastructure,
                             designed to
                             optimize efficiency and drive success for your business.</p>
                     </div>
