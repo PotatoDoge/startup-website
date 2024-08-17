@@ -1,8 +1,8 @@
 .solutions-banner {
-    height: 400px; /* This defines the height of the header */
+    height: 400px;
     background: url('../../assets/code.jpg');
     background-size: cover;
-    position: relative; /* Keep the header position absolute */
+    position: relative;
     width: 100%;
     background-attachment: fixed;
 }
@@ -12,5 +12,41 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Background overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.solutions-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 2;
+    position: relative; /* Keep this above the overlay */
+}
+
+.solutions-content h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.solutions-content button{
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background: #49557e;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    font-weight: bold;
+}
+
+.solutions-content button:hover{
+    background: #2a4081;
 }

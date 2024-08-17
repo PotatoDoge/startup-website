@@ -1,10 +1,14 @@
 import React from 'react';
-import code from '../../assets/code.jpg'
 import './SolutionsBanner.css'
 
 const SolutionsBanner = () => {
     return (
-        <div className="solutions-banner"></div>
+        <div className="solutions-banner">
+            <div className="solutions-content">
+                <h1>Innovative solutions</h1>
+                <button>Contact</button>
+            </div>
+        </div>
     )
 }
 
