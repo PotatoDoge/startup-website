@@ -1,3 +1,4 @@
+/* About Section */
 .about {
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,6 @@
 .about-text-paragraph {
     line-height: 1.8;
     font-size: 18px;
-
 }
 
 .first-text {
@@ -67,7 +67,6 @@
     height: 100%;
     z-index: -1;
     border-radius: 15px;
-
 }
 
 hr {
@@ -75,4 +74,98 @@ hr {
     height: 2px;
     background-color: #e2e2e2;
     border: none;
+}
+
+@media (max-width: 1230px){
+
+    .about-images img {
+        width: 320px;
+        position: relative;
+        vertical-align: bottom;
+        z-index: 1; /* Ensure the image is on top */
+        border-radius: 15px;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1050px) {
+    .about {
+        padding: 120px 60px;
+        flex-direction: column;
+    }
+
+    .about-text, .about-images {
+        width: 100%; /* Make both sections full-width */
+        margin-bottom: 20px; /* Add margin between sections */
+    }
+
+    .about-images {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .about-text-title h1 {
+        font-size: 40px; /* Adjust font size */
+    }
+
+    .about-text-paragraph {
+        font-size: 16px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 750px) {
+    .about {
+        padding: 80px 30px; /* Further reduce padding */
+    }
+
+    .about-text-title h1 {
+        font-size: 30px; /* Reduce font size */
+    }
+
+    .about-text-paragraph {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .about-images img {
+        width: 350px; /* Adjust image width */
+    }
+
+    .image-rectangle:after {
+        left: 1rem;
+        top: 1rem; /* Adjust position of the rectangle */
+    }
+}
+
+@media (max-width: 500px) {
+
+    .about-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about {
+        padding: 90px 65px; /* Further reduce padding */
+    }
+
+    .about-text-title h1 {
+        font-size: 24px; /* Reduce font size */
+    }
+
+    .about-text-paragraph {
+        font-size: 12px; /* Reduce font size */
+    }
+
+    .about-images img {
+        width: 250px; /* Adjust image width */
+    }
+
+    .image-rectangle:after {
+        left: 0.5rem;
+        top: 0.5rem; /* Adjust position of the rectangle */
+    }
 }
