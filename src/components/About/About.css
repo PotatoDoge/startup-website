@@ -49,6 +49,7 @@
     position: relative;
     vertical-align: bottom;
     z-index: 1; /* Ensure the image is on top */
+    border-radius: 15px;
 }
 
 .image-rectangle{
@@ -65,6 +66,8 @@
         width: 100%;
         height: 100%;
         z-index: -1;
+    border-radius: 15px;
+
 }
 
 hr{
