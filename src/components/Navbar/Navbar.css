@@ -1,3 +1,4 @@
+/* Navbar Container */
 .navbar {
     position: sticky; /* Sticky navbar */
     top: 0; /* Stick to the top */
@@ -11,116 +12,113 @@
     backdrop-filter: blur(10px); /* Apply blur effect */
 }
 
-.navbar-menu {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    font-size: 18px;
-}
-
-.navbar-menu a, .navbar-logo a {
-    color: #73acea;
-}
-
-.navbar-menu a:hover {
-    color: #49557e;
-    transition: 0.2s;
-}
-
-.navbar-right {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.navbar button {
-    background: transparent;
-    font-size: 16px;
-    color: #49557e;
-    border: 1px solid tomato;
-    padding: 10px 30px;
-    border-radius: 50px;
+/* Burger Menu Icon */
+.navbar-burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.navbar button:hover {
-    background-color: #fff4f2;
+.burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #73acea;
+    border-radius: 3px;
+    transition: 0.3s;
 }
 
-.navbar .active {
-    padding-bottom: 2px;
-    border-bottom: 2px solid #49557e;
+/* Menu Styling */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px; /* Ensure font size */
 }
 
-.navbar li {
-    cursor: pointer;
+.navbar-menu a, .navbar-logo a {
+    color: #73acea; /* Ensure color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.2s;
 }
 
-.navbar-search-icon {
-    position: relative;
+.navbar-menu a:hover {
+    color: #49557e; /* Hover color */
 }
 
-.navbar-search-icon .dot {
+/* Close Button Styling */
+.navbar-close {
     position: absolute;
-    min-width: 10px;
-    min-height: 10px;
-    background: tomato;
-    border-radius: 5px;
-    top: -8px;
-    right: -8px;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #73acea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Media Queries */
-@media (max-width: 1050px) {
-    .navbar .logo {
-        width: 140px;
-    }
-
-    .navbar-menu {
-        gap: 20px;
-        font-size: 17px;
-    }
-
-    .navbar-right {
-        gap: 30px;
-    }
-
-    .navbar-right img {
-        width: 22px;
-    }
-
-    .navbar-right button {
-        padding: 8px 25px;
-    }
+.navbar-close{
+    display: none;
 }
 
-@media (max-width: 900px) {
-    .navbar .logo {
-        width: 120px;
-    }
-
-    .navbar-menu {
-        gap: 15px;
-        font-size: 16px;
-    }
-
-    .navbar-right {
-        gap: 20px;
-    }
-
-    .navbar-right img {
-        width: 20px;
-    }
-
-    .navbar-right button {
-        padding: 7px 20px;
-        font-size: 15px;
-    }
-}
-
+/* Media Queries for Burger Menu */
 @media (max-width: 750px) {
     .navbar-menu {
         display: none;
     }
+
+    .navbar {
+        backdrop-filter: none;
+    }
+
+    .navbar-burger {
+        display: flex; /* Show burger menu */
+    }
+
+    .navbar-close{
+        display: flex;
+    }
+
+    .navbar-close:hover {
+        color: #49557e; /* Hover color */
+    }
+
+    .navbar-menu-container {
+        position: fixed;
+        top: 0;
+        right: -250px; /* Hide off-screen initially */
+        width: 250px; /* Adjust width as needed */
+        height: 100%;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        transition: right 0.3s ease; /* Smooth transition */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-menu-container.open {
+        right: 0; /* Slide in from the right */
+    }
+
+    .navbar-menu-container .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+        gap: 40px;
+    }
+
+    .navbar-menu-container .navbar-menu a {
+        display: inline;
+        text-align: center;
+    }
+
 }
+
