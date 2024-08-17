@@ -27,11 +27,11 @@
 
 }
 
-.first-text{
+.first-text {
     text-align: start;
 }
 
-.second-text{
+.second-text {
     text-align: end;
 }
 
@@ -52,25 +52,25 @@
     border-radius: 15px;
 }
 
-.image-rectangle{
+.image-rectangle {
     position: relative;
     display: inline-block;
 }
 
 .image-rectangle:after {
-        content: '';
-        position: absolute;
-        left: 2rem;
-        top: 2rem;
-        background-color: #49557e;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
+    content: '';
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    background-color: #49557e;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     border-radius: 15px;
 
 }
 
-hr{
+hr {
     margin: 10px;
     height: 2px;
     background-color: #e2e2e2;
