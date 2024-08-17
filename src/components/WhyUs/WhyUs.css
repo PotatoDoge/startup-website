@@ -1,0 +1,80 @@
+.why-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.why-us h1{
+    color: #49557e;
+    font-weight: 1000;
+    font-size: 50px;
+}
+
+.why-us-content{
+    width: 100%;
+    padding: 90px 90px;
+    display: flex;
+}
+
+.why-us-left-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.why-us-image-rectangle {
+    position: relative;
+    display: inline-block;
+}
+
+.why-us-image-rectangle:after {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: -2rem;
+    background-color: #49557e;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 15px;
+
+}
+
+.why-us-left-image img{
+    width: 650px;
+    border-radius: 15px;
+}
+
+.why-us-right-text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+.why-us-reason{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.why-us-reason-image #circle-icon{
+    color: #49557e;
+    font-size: 30px;
+}
+
+.why-us-reason-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.why-us-reason-text h1{
+    font-size: 28px;
+    color: black;
+}
