@@ -3,6 +3,7 @@ import './SolutionsBanner.css';
 import {FaComputer} from "react-icons/fa6";
 import {FaMobile} from "react-icons/fa";
 import {GoBrowser} from "react-icons/go";
+import {VscOrganization} from "react-icons/vsc";
 
 const SolutionsBanner = () => {
     return (
@@ -31,6 +32,13 @@ const SolutionsBanner = () => {
                             <p>Our desktop applications are tailored to meet your specific needs, providing powerful and
                                 reliable software solutions that can run on any major operating system, including
                                 Windows, macOS, and Linux.</p>
+                        </div>
+                        <div className="card">
+                            <VscOrganization id="icon"/>
+                            <h2>IT Consulting</h2>
+                            <p>Expert IT consulting tailored to your needs. From cloud solutions to IT setup, we ensure
+                                your infrastructure is secure, scalable, and optimized, driving your business forward
+                                with confidence.</p>
                         </div>
                     </div>
                 </div>
