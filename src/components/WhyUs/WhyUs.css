@@ -1,3 +1,4 @@
+/* Why Us Section */
 .why-us {
     width: 100%;
     display: flex;
@@ -6,19 +7,22 @@
     padding-top: 100px;
 }
 
-.why-us h1{
+.why-us h1 {
     color: #49557e;
     font-weight: 1000;
     font-size: 50px;
+    text-align: center; /* Center-align the heading */
 }
 
-.why-us-content{
+.why-us-content {
     width: 100%;
     padding: 90px 90px;
     display: flex;
+    justify-content: center;
+    gap: 90px;
 }
 
-.why-us-left-image{
+.why-us-left-image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,15 +44,14 @@
     height: 100%;
     z-index: -1;
     border-radius: 15px;
-
 }
 
-.why-us-left-image img{
+.why-us-left-image img {
     width: 650px;
     border-radius: 15px;
 }
 
-.why-us-right-text{
+.why-us-right-text {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -57,24 +60,160 @@
     justify-content: center;
 }
 
-.why-us-reason{
+.why-us-reason {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.why-us-reason-image #circle-icon{
+.why-us-reason-image #circle-icon {
     color: #49557e;
     font-size: 30px;
 }
 
-.why-us-reason-text{
+.why-us-reason-text {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.why-us-reason-text h1{
+.why-us-reason-text h1 {
     font-size: 28px;
     color: black;
+}
+
+@media (max-width: 1450px){
+    .why-us-left-image img {
+        width: 550px;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 1360px){
+    .why-us-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1050px) {
+    .why-us {
+        padding-top: 80px; /* Adjust padding */
+    }
+
+    .why-us h1 {
+        font-size: 40px; /* Adjust font size */
+    }
+
+    .why-us-content {
+        padding: 70px 60px; /* Adjust padding */
+    }
+
+    .why-us-left-image {
+        width: 50%; /* Full width */
+    }
+
+    .why-us-left-image img {
+        width: 100%; /* Ensure image fits container */
+    }
+
+    .why-us-right-text {
+        width: 70%; /* Full width */
+        margin-left: 0; /* Remove margin */
+    }
+}
+
+@media (max-width: 800px) {
+    .why-us-right-text  h1{
+        font-size: 30px;
+    }
+
+    .why-us-right-text  p{
+        font-size: 20px;
+    }
+
+
+}
+
+@media (max-width: 750px) {
+    .why-us {
+        padding-top: 60px; /* Further adjust padding */
+    }
+
+    .why-us h1 {
+        font-size: 30px; /* Reduce font size */
+    }
+
+    .why-us-content {
+        padding: 50px 30px; /* Reduce padding */
+    }
+
+    .why-us-left-image {
+        width: 50%; /* Full width */
+        margin-bottom: 20px; /* Add spacing */
+        margin-top: 30px;
+    }
+
+    .why-us-right-text {
+        width: 70%; /* Full width */
+        margin-left: 0; /* Remove margin */
+    }
+
+    .why-us-reason {
+        flex-direction: column; /* Stack reasons vertically */
+    }
+
+    .why-us-reason-image #circle-icon {
+        font-size: 24px; /* Adjust icon size */
+    }
+
+    .why-us-reason-text h1 {
+        font-size: 24px; /* Reduce font size */
+    }
+
+    .why-us-left-image img {
+        width: 100%; /* Adjust image width */
+    }
+}
+
+@media (max-width: 500px) {
+    .why-us {
+        padding-top: 60px; /* Further reduce padding */
+    }
+
+    .why-us h1 {
+        font-size: 24px; /* Reduce font size */
+    }
+
+    .why-us-content {
+        padding: 30px 10px; /* Further reduce padding */
+    }
+
+    .why-us-left-image {
+        width: 70%; /* Full width */
+    }
+
+    .why-us-right-text {
+        width: 70%; /* Full width */
+        margin-bottom: 100px;
+    }
+
+    .why-us-reason {
+        flex-direction: column; /* Stack reasons vertically */
+    }
+
+    .why-us-reason-image #circle-icon {
+        font-size: 20px; /* Adjust icon size */
+    }
+
+    .why-us-reason-text h1 {
+        font-size: 20px; /* Reduce font size */
+        text-align: left;
+    }
+
+    .why-us-left-image img {
+        width: 100%; /* Adjust image width */
+    }
 }
