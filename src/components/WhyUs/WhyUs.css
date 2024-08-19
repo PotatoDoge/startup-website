@@ -198,6 +198,7 @@
     .why-us-right-text {
         width: 70%; /* Full width */
         margin-bottom: 100px;
+        margin-top: -50px;
     }
 
     .why-us-reason {
