@@ -1,3 +1,4 @@
+/* Solutions Banner */
 .solutions-banner {
     height: auto;
     background: url('../../assets/code.jpg');
@@ -5,6 +6,7 @@
     position: relative;
     width: 100%;
     background-attachment: fixed;
+    background-position: center;
 }
 
 .solutions-banner::before {
@@ -27,7 +29,8 @@
     color: white;
     text-align: center;
 }
-.solutions-content-cards{
+
+.solutions-content-cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,6 +43,8 @@
     display: flex;
     gap: 80px;
     margin-top: 20px;
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+    justify-content: center; /* Center-align cards */
 }
 
 .card {
@@ -75,4 +80,109 @@
     color: white;
     width: 100px;
     height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 1050px) {
+    .solutions-content {
+        height: auto; /* Adjust height to fit content */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .solutions-content-cards {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .solutions-cards {
+        gap: 40px; /* Reduce gap between cards */
+    }
+
+    .card {
+        width: 200px; /* Adjust card width */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .card h2 {
+        font-size: 22px; /* Adjust font size */
+    }
+
+    .card p {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .card #icon {
+        width: 80px; /* Adjust icon size */
+    }
+}
+
+@media (max-width: 750px) {
+    .solutions-content {
+        height: auto; /* Ensure content fits */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .solutions-content-cards {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .solutions-cards {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+        justify-content: center;
+        gap: 20px; /* Reduce gap between cards */
+    }
+
+    .card {
+        width: 80%; /* Full width of container */
+        padding: 25px; /* Adjust padding */
+    }
+
+    .card h2 {
+        font-size: 30px; /* Adjust font size */
+    }
+
+    .card p {
+        font-size: 22px; /* Adjust font size */
+    }
+
+    .card #icon {
+        width: 60px; /* Adjust icon size */
+    }
+}
+
+@media (max-width: 500px) {
+    .solutions-content {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .solutions-content-cards {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .solutions-cards {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+        justify-content: center;
+        gap: 20px; /* Reduce gap between cards */
+    }
+
+    .card {
+        width: 80%; /* Full width of container */
+        padding: 25px; /* Adjust padding */
+    }
+
+    .card h2 {
+        font-size: 22px; /* Adjust font size */
+    }
+
+    .card p {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .card #icon {
+        width: 50px; /* Adjust icon size */
+    }
 }

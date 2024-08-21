@@ -1,4 +1,5 @@
-.reviews{
+/* Reviews Section */
+.reviews {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,10 +8,11 @@
     margin-bottom: 200px;
 }
 
-.reviews h1{
+.reviews h1 {
     color: #49557e;
     font-weight: 1000;
     font-size: 50px;
+    text-align: center; /* Center align for better responsiveness */
 }
 
 .reviews-content {
@@ -19,6 +21,7 @@
     justify-content: center;
     align-items: center;
     gap: 150px;
+    flex-wrap: wrap; /* Allow wrapping of review contents */
     margin-top: 100px;
 }
 
@@ -29,9 +32,8 @@
     justify-content: center;
     transition: 0.3s;
     animation: fadeIn 2s;
-    width: 300px; /* Set a fixed width for each review content */
+    width: 300px; /* Fixed width for each review content */
 }
-
 
 .reviewer-image img {
     width: 80px;
@@ -40,7 +42,7 @@
     object-fit: cover; /* Ensures the image scales correctly within the circle */
 }
 
-.reviewer-text{
+.reviewer-text {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -48,8 +50,72 @@
     padding-top: 30px;
 }
 
-.reviewer-text p{
+.reviewer-text p {
     font-size: 20px;
     text-align: center;
     line-height: 1.3;
+}
+
+/* Media Queries */
+@media (max-width: 1050px) {
+    .reviews h1 {
+        font-size: 40px; /* Adjust font size for better fit */
+    }
+
+    .reviews-content {
+        gap: 80px; /* Reduce gap between review contents */
+    }
+
+    .review-content {
+        width: 250px; /* Adjust width of each review content */
+    }
+
+    .reviewer-text p {
+        font-size: 18px; /* Adjust font size for better readability */
+    }
+}
+
+@media (max-width: 750px) {
+    .reviews h1 {
+        font-size: 30px; /* Further reduce font size */
+    }
+
+    .reviews-content {
+        gap: 40px; /* Reduce gap between review contents */
+    }
+
+    .review-content {
+        width: 200px; /* Further adjust width of each review content */
+    }
+
+    .reviewer-text p {
+        font-size: 16px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 500px) {
+    .reviews {
+        margin-top: 50px;
+    }
+
+    .reviews-title {
+        margin-top: 30px;
+    }
+
+    .reviews h1 {
+        font-size: 24px;
+    }
+
+    .reviews-content {
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .review-content {
+        width: 70%;
+    }
+
+    .reviewer-text p {
+        font-size: 14px;
+    }
 }

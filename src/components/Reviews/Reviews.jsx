@@ -7,7 +7,9 @@ import profile3 from '../../assets/profile-3.jpg';
 const Reviews = () => {
     return (
         <div className="reviews">
-            <h1>Reviews</h1>
+            <div className="reviews-title">
+                <h1>Reviews</h1>
+            </div>
             <div className="reviews-content">
                 <div className="review-content">
                     <div className="reviewer-image">
