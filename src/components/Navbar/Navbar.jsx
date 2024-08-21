@@ -20,7 +20,7 @@ const Navbar = ({setShowLogin}) => {
                 <ul className="navbar-menu">
                     <a href="#home">Home</a>
                     <a href='#explore-menu'>About Us</a>
-                    <a href='#footer'>Pricing</a>
+                    <a href='#footer'>Services</a>
                     <a href='#footer'>Projects</a>
                     <a href='#footer'>Blog</a>
                     <a href='#footer'>Contact Us</a>
