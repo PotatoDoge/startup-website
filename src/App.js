@@ -3,15 +3,22 @@ import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import React from "react";
 import Footer from "./components/Footer/Footer";
+import {Route, Routes} from "react-router-dom";
 
 function App() {
     return (
-        <div className="app">
-            <Navbar />
-            <Home/>
+        <>
+            <div className="app">
+                <Navbar/>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/about-us" element={<Home/>}/>
+                    <Route path="/order" element={<Home/>}/>
+                </Routes>
+            </div>
             <Footer/>
-        </div>
-    );
+        </>
+    )
 }
 
 export default App;
