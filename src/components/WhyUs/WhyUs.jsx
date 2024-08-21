@@ -2,7 +2,6 @@ import React from 'react';
 import group_image from '../../assets/group-image.jpg'
 import './WhyUs.css'
 import {FaCheckCircle} from "react-icons/fa";
-import guyInComputer from "../../assets/guy-in-computer.jpg";
 
 
 const WhyUs = () => {
