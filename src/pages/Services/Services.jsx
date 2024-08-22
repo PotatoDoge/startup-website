@@ -1,9 +1,11 @@
 import React from 'react';
+import './Services.css'
+import Offer from "../../components/Offer/Offer";
 
 const Services = () => {
     return(
         <div>
-            <p>Hello from services</p>
+            <Offer/>
         </div>
     );
 }
