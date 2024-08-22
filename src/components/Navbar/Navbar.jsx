@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './Navbar.css';
 import {IoIosCloseCircleOutline} from "react-icons/io";
 import logo from '../../assets/logo.png'
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -18,9 +19,9 @@ const Navbar = () => {
                     <IoIosCloseCircleOutline size="lg"/>
                 </button>
                 <ul className="navbar-menu">
-                    <a href="#home">Home</a>
+                    <Link to="/">Home</Link>
                     <a href='#explore-menu'>About Us</a>
-                    <a href='#footer'>Services</a>
+                    <Link to="/services">Services</Link>
                     <a href='#footer'>Projects</a>
                     <a href='#footer'>Blog</a>
                     <a href='#footer'>Contact Us</a>
