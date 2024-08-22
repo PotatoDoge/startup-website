@@ -3,7 +3,7 @@ import './Navbar.css';
 import {IoIosCloseCircleOutline} from "react-icons/io";
 import logo from '../../assets/logo.png'
 
-const Navbar = ({setShowLogin}) => {
+const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => setMenuOpen(!menuOpen);
